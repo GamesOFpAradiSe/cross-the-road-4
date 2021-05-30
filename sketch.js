@@ -19,9 +19,7 @@ function setup() {
   createCanvas(1366,700);
   carGroup1 = new Group();
   logGroup1 = new Group();
-  player = new Players(width/2,height-25)
-  player.spt.scale=0.1
-  player.spt.addAnimation("BFF",pl)
+ 
   city = createSprite(width/2,-1500)
  city.addAnimation(":)",c)
   for(var i=0;i<6;i++){
@@ -41,6 +39,10 @@ function setup() {
      for(var i = 0; i < 40; i++){
       log = new Log(-2);
       logGroup1.add(log.spt);}
+ 
+  player = new Players(width/2,height-25)
+  player.spt.scale=0.1
+  player.spt.addAnimation("BFF",pl)
   
  }
 
