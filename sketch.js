@@ -20,8 +20,7 @@ function setup() {
   carGroup1 = new Group();
   logGroup1 = new Group();
  
-  city = createSprite(width/2,-1500)
- city.addAnimation(":)",c)
+  
   for(var i=0;i<6;i++){
  
     var bottomGrass1 = createSprite(683,height-50-(i*400),width,grassHeight);
@@ -39,12 +38,13 @@ function setup() {
      for(var i = 0; i < 40; i++){
       log = new Log(-2);
       logGroup1.add(log.spt);}
- 
-  player = new Players(width/2,height-25)
-  player.spt.scale=0.1
-  player.spt.addAnimation("BFF",pl)
+
+      player = new Players(width/2,height-25)
+      player.spt.scale=0.1
+      player.spt.addAnimation("BFF",pl)
   
  }
+
 
 function draw() {
   background("skyblue");
